@@ -5,12 +5,16 @@
    $uname = "dbgamemax";
    $pass = "dbgamemax123";
    $dbName = "dbgame";
-   $uri = "mongodb:".$uname.":".$pass."@ds127983.mlab.com:27983/dbgame";
+   $uri = "mongodb://".$uname.":".$pass."@ds127983.mlab.com:27983/dbgame";
    $collection = "foo";
 
-   //Creando la conexión a mongodb de mlab
    $conn = new MongoClient($uri);
-   //echo $conn; // para asegurarse que la conexión esté bien.
+
+   echo ('Nuestra base de datos en mLAB:');
+   echo $conn; // para asegurarse que la conexión esté bien.
+   echo ('<br>');
+
+
 
    $db = $conn->selectDB($dbName);
    //echo $db;
