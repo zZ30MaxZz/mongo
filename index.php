@@ -42,7 +42,7 @@
    </style>
 </head>
 <body>
-<h1>PHP en Heroku</h1>
+<h1>PHP en Heroku <?php echo ('Salida en PHP');?> </h1>
 <form action ="guardar.php" method="post">
     <fieldset>
         <center><h2>Datos</h2></center><br>
