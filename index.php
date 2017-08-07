@@ -60,7 +60,7 @@
     <?php
     //$llave = $_POST["llave"]; //Cuando enviemos
     //$descripcion = $_POST["descripcion"]; //Cuando enviemos
-
+    require 'vendor/autoload.php';
     $uname = "dbgamemax";
     $pass = "dbgamemax123";
     $dbName = "dbgame";
