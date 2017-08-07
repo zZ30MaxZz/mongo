@@ -67,7 +67,7 @@
     $uri = "mongodb://".$uname.":".$pass."@ds127983.mlab.com:27983/dbgame";
     $collection = "foo";
 
-    $conn = new MongoClient($uri);
+    $conn = new MongoClient(MONGODB_URI);
 
     echo ('Nuestra base de datos en mLAB:');
     echo $conn; // para asegurarse que la conexión esté bien.
